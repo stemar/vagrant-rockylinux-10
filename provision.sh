@@ -1,4 +1,5 @@
 timedatectl set-timezone $TIMEZONE
+timedatectl set-local-rtc 0
 
 echo '==> Setting '$(timedatectl | grep 'Time zone:' | xargs)
 
