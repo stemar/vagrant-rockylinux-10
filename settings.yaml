@@ -27,10 +27,6 @@
   :owner: vagrant
   :group: vagrant
 
-:synced_folder:
-  :host: ~/Code
-  :guest: /home/vagrant/Code
-
 :copy_files:
 - :source: ~/.ssh
   :destination: ~/.ssh
