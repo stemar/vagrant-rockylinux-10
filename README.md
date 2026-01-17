@@ -3,7 +3,7 @@
 Make a Vagrant box with Rocky Linux 10 LAMP stack, plus configure it for development.
 
 - Host: Linux or Mac.
-- Guest: Rocky Linux 10, Apache 2.4, MariaDB 12.1, PHP 8.4, Python 3.12, Ruby 3.3.10, Git 2+.
+- Guest: Rocky Linux 10, Apache 2.4, MariaDB 12.1, PHP 8.4, Python 3.12, Ruby 3.3, Git 2.x.
 
 - Leave code and version control files physically outside the VM while virtually accessing them inside the VM.
 - Use any GUI tool (IDEs, browsers, database administration applications, Git clients) outside the VM to access code and data inside the VM.
