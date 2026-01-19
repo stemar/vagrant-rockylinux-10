@@ -56,8 +56,6 @@ vagrant ssh
     - Avoid writing a password a zillion times through development.
 - Adminer served at `http://localhost:8000/adminer.php`.
 - Development-specific `php.ini` settings from `.htaccess` for all local websites.
-- Option to install Ruby with [rbenv](https://github.com/rbenv/rbenv).
-- Option to install [Bundler](https://bundler.io).
 
 ---
 
@@ -88,8 +86,6 @@ Edit values in `settings.yaml`.
 - Change `:synced_folder` values to match your host machine pathname.
 - Edit the `:copy_files` values:
 - Edit the `:php_error_reporting` value if necessary.
-- Uncomment the `:ruby_version` value if you want to install rbenv, Bundler and Ruby.
-    - Edit the `:ruby_version` value if necessary.
 
 Edit `config` files if needed.
 
