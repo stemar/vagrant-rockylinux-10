@@ -120,6 +120,4 @@ httpd -V | head -n1 | cut -d ' ' -f 3-
 mariadb -V
 php -v | head -n1
 python3 --version
-if [ $RUBY_VERSION ]; then
-    ruby -v
-fi
+ruby -v
