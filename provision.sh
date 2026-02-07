@@ -57,9 +57,7 @@ dnf -q -y install php php-cli php-common \
 mv /etc/httpd/conf.modules.d/00-mpm.conf /etc/httpd/conf.modules.d/00-mpm.conf~
 cp /vagrant/config/00-mpm.conf /etc/httpd/conf.modules.d/00-mpm.conf
 cp /vagrant/config/21-php.conf /etc/httpd/conf.modules.d/21-php.conf
-cp /vagrant/config/php.ini.htaccess /var/www/.htaccess
-PHP_ERROR_REPORTING_INT=$(php -r 'echo '"$PHP_ERROR_REPORTING"';')
-sed -i 's|PHP_ERROR_REPORTING_INT|'$PHP_ERROR_REPORTING_INT'|' /var/www/.htaccess
+cp /vagrant/config/php.ini /var/www/php.ini
 
 echo '==> Installing Adminer'
 
@@ -96,7 +94,7 @@ apachectl configtest
 echo '==> Starting Apache'
 
 systemctl restart httpd
-systemctl enable httpd --now
+systemctl enable httpd
 
 echo '==> Starting MariaDB'
 
