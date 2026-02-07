@@ -83,6 +83,7 @@ echo '==> Adding HTTP service to firewall'
 setenforce Permissive
 firewall-cmd --add-service=http --permanent &>/dev/null
 firewall-cmd --reload &>/dev/null
+setsebool -P httpd_execmem on
 
 echo '==> Testing Apache configuration'
 
